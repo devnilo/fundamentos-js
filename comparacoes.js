@@ -1,7 +1,7 @@
 // == (comparação implícita)
 
 // basicamente usando dois iguais (==), ele vai fazer uma comparação implícita, no caso,
-// comparando apenas do valor
+// comparando apenas o valor
 
 const numero = 7;
 const texto = "7";

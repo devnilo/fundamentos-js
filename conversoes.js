@@ -4,7 +4,7 @@
 const numero = 7;
 const numeroString = "7";
 
-// olhar no código type-boolean.js que está explicado a diferença dos iguais (==) (===)
+// olhar no arquvio comparacoes.js que está explicado a diferença dos iguais (==) (===)
 console.log(numero === numeroString); // false
 console.log(numero == numeroString); // true
 
