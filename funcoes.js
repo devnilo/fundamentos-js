@@ -1,3 +1,57 @@
+/* Função sem retorno e sem parâmetro: A função abaixo apenas executa uma instrução, sem a necessidade de 
+disponibilizar o resultado para o restante do código. */
+function cumprimentar() {
+    console.log(`Oi gente!`);
+}
+cumprimentar(); // Oi gente!
+
+//------------------------------------------------------------------------------------------------------------------//
+
+/* Função sem retorno, com parâmetro: similar à anterior, porém agora a função recebe, via parâmetro, o nome da pessoa 
+a ser cumprimentada. Dessa forma é possível reaproveitar a função para que funcione de maneira parecida com o 
+nome de qualquer pessoa (desde que esteja no formato de dado string. */
+function cumprimentaPessoa(pessoa) {
+    console.log(`Oi, ${pessoa}!`);
+}
+cumprimentaPessoa('Victória') // Oi, Victória!
+
+//------------------------------------------------------------------------------------------------------------------//
+
+/* Função com retorno, sem parâmetro: É possível combinar funções para que cada uma controle apenas uma parte do 
+código e elas trabalhem juntas.
+
+No caso abaixo, a função cumprimentar() não precisa receber nenhum parâmetro. Mas logo abaixo vemos que ela está sendo 
+utilizada para montar uma string na função cumprimentaPessoa(nomePessoa). Isso significa que a string ”Oi gente!” 
+deve estar disponível para outras partes do programa - ou seja, deve ser retornada com o uso da palavra-chave return.
+*/
+
+function cumprimento(){
+    return 'Oi gente!'
+   }
+   
+function meuCumprimento(nomePessoa) {
+    console.log(`${cumprimento()} Meu nome é ${nomePessoa}`)
+}
+   
+meuCumprimento('Danilo') // Oi gente! Meu nome é Danilo
+
+//------------------------------------------------------------------------------------------------------------------//
+
+/* Função com return e mais de um parâmetro: Lembrando que as funções podem receber a quantidade de parâmetros 
+necessária, e que o JavaScript identifica os parâmetros pela ordem! Ou seja, no exemplo abaixo o parâmetro 
+numero1 se refere a 15, o parâmetro numero2 se refere a 30 e o parâmetro numero3 se refere a 45. Somos nós, que 
+estamos desenvolvendo o código, que damos os nomes aos parâmetros de acordo com o dado que a função espera receber 
+- no caso, números.
+*/
+
+function operacaoMatematica(numero1, numero2, numero3) {
+    return numero1 + numero2 + numero3
+   }
+   
+operacaoMatematica(15, 30, 45) // 90
+
+//------------------------------------------------------------------------------------------------------------------//
+
 // declaração de função
 function imprimeTexto(texto) {
     console.log(texto);
