@@ -1,3 +1,5 @@
+// aprendendo mais sobre o for
+
 const numeros = [100, 200, 300, 400, 500, 600];
 
 // pode utilizar qualquer nome no lugar de 'i'
