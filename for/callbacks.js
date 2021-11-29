@@ -1,3 +1,8 @@
+/* O termo callback se refere à função que é “chamada de volta” dentro de outra função. Após o lançamento 
+do ES6 (também conhecido como JavaScript 2015) o uso desse tipo de método foi se consolidando, então é importante 
+entender como utilizá-lo.
+*/
+
 /* Vamos continuar trabalhando com call-back e forEach por enquanto que é um método que já vimos e que 
 vamos conseguir trabalhar talvez um pouco melhor em cima dele
 */
